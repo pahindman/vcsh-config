@@ -1,0 +1,4 @@
+#!/bin/sh
+if ! git config status.showUntrackedFiles > /dev/null; then
+    git config status.showUntrackedFiles no
+fi

@@ -1,0 +1,4 @@
+#!/bin/sh
+if ! test x"\$(git config core.sparseCheckout)" = x"true"; then
+    git config core.sparseCheckout true
+fi

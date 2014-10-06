@@ -1,0 +1,15 @@
+#!/bin/sh
+name=$(basename $0)
+if ! grep $name $GIT_DIR/info/sparse-checkout >/dev/null; then
+    cat >> $GIT_DIR/info/sparse-checkout << EOF
+# from $name
+*
+!README
+!README.md
+!README.org
+!LICENSE
+!LICENSE.md
+!UNLICENSE
+!UNLICENSE.md
+EOF
+fi
