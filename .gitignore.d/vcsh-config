@@ -1,0 +1,9 @@
+*
+!/.config
+!/.config/vcsh
+!/.config/vcsh/hooks-enabled
+!/.config/vcsh/hooks-enabled/pre-upgrade.00-setSparseCheckout
+!/.config/vcsh/hooks-enabled/pre-upgrade.01-defaultSparseCheckout
+!/.config/vcsh/hooks-enabled/pre-upgrade.02-defaultDoNotShowUntracked
+!/.gitignore.d
+!/.gitignore.d/vcsh-config
