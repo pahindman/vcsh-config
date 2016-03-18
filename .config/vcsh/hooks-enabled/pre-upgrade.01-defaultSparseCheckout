@@ -1,6 +1,6 @@
 #!/bin/sh
 name=$(basename $0)
-if ! grep $name $GIT_DIR/info/sparse-checkout >/dev/null; then
+if ! grep $name $GIT_DIR/info/sparse-checkout >/dev/null 2>&1; then
     cat >> $GIT_DIR/info/sparse-checkout << EOF
 # from $name
 *
